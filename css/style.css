@@ -1,17 +1,76 @@
 body {
-  background-color: black;
   background-size: cover;
-  /* stops bg scroll */
+  /* stops bg scroll for when 
+  background-image is used */
   background-attachment: local;
 }
 
 h1 {
-  color: purple;
+  color: magenta;
   font-family: verdana;
   font-size: 300%;
+  text-align: center;
 }
 
 p {
-  color: fuschia;
+  color: violet;
   font-family: courier;
+  text-align: center;
+}
+
+b {
+  color: green;
+}
+
+em {
+  color: magenta;
+}
+
+hr {
+  width:25em;
+  border-width: 5px;
+  border-color: gold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+li {
+  display:inline-block;
+  margin:10px;
+  color: green;
+}
+
+li:hover {
+  transform:scale(1.3) rotate(-10deg);
+}
+
+span:hover {
+  display:inline-block;
+  transform:scale(1.1) rotate(-10deg);
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+  #background-video {
+     display: none;
+  } 
+  body {
+     background: url("img/the-matrix-digital-rain-poster.jpg") no-repeat;
+     background-size: cover;
+  }
 }
