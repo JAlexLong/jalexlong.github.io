@@ -1,4 +1,6 @@
 body {
+  margin:0;
+  background:0;
   background-size: cover;
   /* stops bg scroll for when 
   background-image is used */
@@ -39,9 +41,9 @@ ul {
 }
 
 li {
+  color: green;
   display:inline-block;
   margin:10px;
-  color: green;
 }
 
 li:hover {
@@ -50,7 +52,7 @@ li:hover {
 
 span:hover {
   display:inline-block;
-  transform:scale(1.1) rotate(-10deg);
+  transform:scale(1.05) rotate(-2deg);
 }
 
 #background-video {
