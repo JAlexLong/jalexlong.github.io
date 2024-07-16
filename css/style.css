@@ -1,6 +1,6 @@
 body {
   margin:0;
-  background:0;
+  background:none;
   background-size: cover;
   /* stops bg scroll for when 
   background-image is used */
@@ -9,14 +9,12 @@ body {
 
 h1 {
   color: magenta;
-  font-family: verdana;
   font-size: 300%;
   text-align: center;
 }
 
 p {
   color: violet;
-  font-family: courier;
   text-align: center;
 }
 
@@ -31,7 +29,7 @@ em {
 hr {
   width:25em;
   border-width: 5px;
-  border-color: gold;
+  border-color: grey;
 }
 
 ul {
@@ -75,4 +73,11 @@ span:hover {
      background: url("img/the-matrix-digital-rain-poster.jpg") no-repeat;
      background-size: cover;
   }
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
